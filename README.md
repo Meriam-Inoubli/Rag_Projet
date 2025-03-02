@@ -1,5 +1,8 @@
 # 🧠 Projet_GenAI : Système RAG pour l'Analyse des Données sur le Cancer du Sein
-Ce projet est un système RAG (Retrieval-Augmented Generation) conçu pour répondre à des questions en combinant la recherche d'informations et la génération de texte. Il est spécialisé dans le traitement et l'analyse de données sur le cancer du sein, en utilisant des documents PDF, des embeddings, et des services cloud comme Google Cloud Vertex AI. Le système inclut également un module d'évaluation pour mesurer les performances en utilisant des métriques standard et spécifiques. 
+Ce projet est un système RAG (Retrieval-Augmented Generation) conçu pour répondre à des questions en combinant la recherche d'informations et la génération de texte. Il est spécialisé dans le traitement et l'analyse de données sur le cancer du sein, en utilisant des documents PDF, des embeddings, et des services cloud comme Google Cloud Vertex AI. Le système inclut également un module d'évaluation pour mesurer les performances en utilisant des métriques standard et spécifiques.
+
+![image](https://github.com/user-attachments/assets/e50b1f0d-8750-47b9-bae0-f69873214421)
+
 
 ## 🚀 Fonctionnalités
 
