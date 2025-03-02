@@ -1,0 +1,359 @@
+2025-03-01 23:08:53,076 - ERROR - Échec de l'initialisation du chatbot : 403 This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry. [reason: "BILLING_DISABLED"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "aiplatform.googleapis.com"
+}
+metadata {
+  key: "containerInfo"
+  value: "dauphine-437611"
+}
+metadata {
+  key: "consumer"
+  value: "projects/dauphine-437611"
+}
+, locale: "en-US"
+message: "This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry."
+, links {
+  description: "Google developers console billing"
+  url: "https://console.developers.google.com/billing/enable?project=dauphine-437611"
+}
+]
+2025-03-01 23:36:57,655 - ERROR - Échec de l'initialisation du chatbot : 403 This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry. [reason: "BILLING_DISABLED"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "aiplatform.googleapis.com"
+}
+metadata {
+  key: "containerInfo"
+  value: "dauphine-437611"
+}
+metadata {
+  key: "consumer"
+  value: "projects/dauphine-437611"
+}
+, locale: "en-US"
+message: "This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry."
+, links {
+  description: "Google developers console billing"
+  url: "https://console.developers.google.com/billing/enable?project=dauphine-437611"
+}
+]
+2025-03-02 00:17:27,722 - ERROR - Échec de l'initialisation du chatbot : 403 This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry. [reason: "BILLING_DISABLED"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "aiplatform.googleapis.com"
+}
+metadata {
+  key: "containerInfo"
+  value: "dauphine-437611"
+}
+metadata {
+  key: "consumer"
+  value: "projects/dauphine-437611"
+}
+, locale: "en-US"
+message: "This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry."
+, links {
+  description: "Google developers console billing"
+  url: "https://console.developers.google.com/billing/enable?project=dauphine-437611"
+}
+]
+2025-03-02 00:28:54,284 - ERROR - Échec de l'initialisation du chatbot : 403 This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry. [reason: "BILLING_DISABLED"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "aiplatform.googleapis.com"
+}
+metadata {
+  key: "containerInfo"
+  value: "dauphine-437611"
+}
+metadata {
+  key: "consumer"
+  value: "projects/dauphine-437611"
+}
+, locale: "en-US"
+message: "This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry."
+, links {
+  description: "Google developers console billing"
+  url: "https://console.developers.google.com/billing/enable?project=dauphine-437611"
+}
+]
+2025-03-02 00:44:32,444 - ERROR - Échec de l'initialisation du chatbot : 403 This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry. [reason: "BILLING_DISABLED"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "aiplatform.googleapis.com"
+}
+metadata {
+  key: "containerInfo"
+  value: "dauphine-437611"
+}
+metadata {
+  key: "consumer"
+  value: "projects/dauphine-437611"
+}
+, locale: "en-US"
+message: "This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry."
+, links {
+  description: "Google developers console billing"
+  url: "https://console.developers.google.com/billing/enable?project=dauphine-437611"
+}
+]
+2025-03-02 00:52:20,622 - ERROR - Échec de l'initialisation du chatbot : 403 This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry. [reason: "BILLING_DISABLED"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "aiplatform.googleapis.com"
+}
+metadata {
+  key: "containerInfo"
+  value: "dauphine-437611"
+}
+metadata {
+  key: "consumer"
+  value: "projects/dauphine-437611"
+}
+, locale: "en-US"
+message: "This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry."
+, links {
+  description: "Google developers console billing"
+  url: "https://console.developers.google.com/billing/enable?project=dauphine-437611"
+}
+]
+2025-03-02 00:56:02,632 - ERROR - Échec de l'initialisation du chatbot : 403 This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry. [reason: "BILLING_DISABLED"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "aiplatform.googleapis.com"
+}
+metadata {
+  key: "containerInfo"
+  value: "dauphine-437611"
+}
+metadata {
+  key: "consumer"
+  value: "projects/dauphine-437611"
+}
+, locale: "en-US"
+message: "This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry."
+, links {
+  description: "Google developers console billing"
+  url: "https://console.developers.google.com/billing/enable?project=dauphine-437611"
+}
+]
+2025-03-02 01:05:40,871 - ERROR - Échec de l'initialisation du chatbot : 403 This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry. [reason: "BILLING_DISABLED"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "aiplatform.googleapis.com"
+}
+metadata {
+  key: "containerInfo"
+  value: "dauphine-437611"
+}
+metadata {
+  key: "consumer"
+  value: "projects/dauphine-437611"
+}
+, locale: "en-US"
+message: "This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry."
+, links {
+  description: "Google developers console billing"
+  url: "https://console.developers.google.com/billing/enable?project=dauphine-437611"
+}
+]
+2025-03-02 01:13:15,010 - ERROR - Exception raised in Job[1]: APIConnectionError(Connection error.)
+2025-03-02 01:13:18,717 - ERROR - Exception raised in Job[0]: APIConnectionError(Connection error.)
+2025-03-02 01:13:57,746 - ERROR - Échec de l'initialisation du chatbot : 403 This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry. [reason: "BILLING_DISABLED"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "aiplatform.googleapis.com"
+}
+metadata {
+  key: "containerInfo"
+  value: "dauphine-437611"
+}
+metadata {
+  key: "consumer"
+  value: "projects/dauphine-437611"
+}
+, locale: "en-US"
+message: "This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry."
+, links {
+  description: "Google developers console billing"
+  url: "https://console.developers.google.com/billing/enable?project=dauphine-437611"
+}
+]
+2025-03-02 01:16:05,756 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 01:16:26,679 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 01:18:06,555 - ERROR - Exception raised in Job[1]: APIConnectionError(Connection error.)
+2025-03-02 01:18:21,779 - ERROR - Exception raised in Job[0]: APIConnectionError(Connection error.)
+2025-03-02 01:22:32,262 - ERROR - Échec de l'initialisation du chatbot : 403 This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry. [reason: "BILLING_DISABLED"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "aiplatform.googleapis.com"
+}
+metadata {
+  key: "containerInfo"
+  value: "dauphine-437611"
+}
+metadata {
+  key: "consumer"
+  value: "projects/dauphine-437611"
+}
+, locale: "en-US"
+message: "This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry."
+, links {
+  description: "Google developers console billing"
+  url: "https://console.developers.google.com/billing/enable?project=dauphine-437611"
+}
+]
+2025-03-02 01:24:08,688 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 01:24:44,592 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 01:26:59,575 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 01:27:45,398 - ERROR - Exception raised in Job[0]: TimeoutError()
+2025-03-02 01:29:43,967 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 01:30:46,264 - ERROR - Exception raised in Job[0]: TimeoutError()
+2025-03-02 01:32:16,747 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 01:33:47,542 - ERROR - Exception raised in Job[0]: TimeoutError()
+2025-03-02 01:35:32,230 - ERROR - Exception raised in Job[1]: APIConnectionError(Connection error.)
+2025-03-02 01:35:39,557 - ERROR - Exception raised in Job[0]: APIConnectionError(Connection error.)
+2025-03-02 01:37:37,192 - ERROR - Échec de l'initialisation du chatbot : 403 This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry. [reason: "BILLING_DISABLED"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "aiplatform.googleapis.com"
+}
+metadata {
+  key: "containerInfo"
+  value: "dauphine-437611"
+}
+metadata {
+  key: "consumer"
+  value: "projects/dauphine-437611"
+}
+, locale: "en-US"
+message: "This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry."
+, links {
+  description: "Google developers console billing"
+  url: "https://console.developers.google.com/billing/enable?project=dauphine-437611"
+}
+]
+2025-03-02 01:37:58,404 - ERROR - Exception raised in Job[1]: APIConnectionError(Connection error.)
+2025-03-02 01:38:03,928 - ERROR - Exception raised in Job[0]: APIConnectionError(Connection error.)
+2025-03-02 01:38:06,813 - ERROR - Exception raised in Job[1]: APIConnectionError(Connection error.)
+2025-03-02 01:38:07,501 - ERROR - Exception raised in Job[1]: APIConnectionError(Connection error.)
+2025-03-02 01:38:10,549 - ERROR - Exception raised in Job[0]: APIConnectionError(Connection error.)
+2025-03-02 01:40:38,815 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 01:41:49,762 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 01:43:08,301 - ERROR - Exception raised in Job[0]: TimeoutError()
+2025-03-02 01:49:55,369 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 01:50:46,042 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 01:52:05,043 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 01:52:53,463 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 01:54:23,235 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 01:54:34,298 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 01:55:39,274 - ERROR - Exception raised in Job[0]: APIConnectionError(Connection error.)
+2025-03-02 01:55:39,840 - ERROR - Exception raised in Job[1]: APIConnectionError(Connection error.)
+2025-03-02 01:56:53,116 - ERROR - Échec de l'initialisation du chatbot : 403 This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry. [reason: "BILLING_DISABLED"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "aiplatform.googleapis.com"
+}
+metadata {
+  key: "containerInfo"
+  value: "dauphine-437611"
+}
+metadata {
+  key: "consumer"
+  value: "projects/dauphine-437611"
+}
+, locale: "en-US"
+message: "This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry."
+, links {
+  description: "Google developers console billing"
+  url: "https://console.developers.google.com/billing/enable?project=dauphine-437611"
+}
+]
+2025-03-02 01:59:15,078 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 01:59:35,970 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:01:31,756 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:02:16,125 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:04:03,745 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:04:16,235 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:06:28,038 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:07:05,408 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:08:56,612 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:10:01,426 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:34:55,337 - ERROR - 
+2025-03-02 02:44:21,654 - ERROR - Échec de l'initialisation du chatbot : 403 This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry. [reason: "BILLING_DISABLED"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "aiplatform.googleapis.com"
+}
+metadata {
+  key: "containerInfo"
+  value: "dauphine-437611"
+}
+metadata {
+  key: "consumer"
+  value: "projects/dauphine-437611"
+}
+, locale: "en-US"
+message: "This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry."
+, links {
+  description: "Google developers console billing"
+  url: "https://console.developers.google.com/billing/enable?project=dauphine-437611"
+}
+]
+2025-03-02 02:46:42,722 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:47:12,907 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:48:35,464 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:49:25,366 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:51:25,238 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:52:26,312 - ERROR - Exception raised in Job[0]: TimeoutError()
+2025-03-02 02:54:24,233 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:55:09,893 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:56:57,081 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:57:00,991 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 02:58:14,237 - ERROR - Exception raised in Job[1]: APIConnectionError(Connection error.)
+2025-03-02 02:58:23,008 - ERROR - Exception raised in Job[0]: APIConnectionError(Connection error.)
+2025-03-02 02:58:49,124 - ERROR - Échec de l'initialisation du chatbot : 403 This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry. [reason: "BILLING_DISABLED"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "aiplatform.googleapis.com"
+}
+metadata {
+  key: "containerInfo"
+  value: "dauphine-437611"
+}
+metadata {
+  key: "consumer"
+  value: "projects/dauphine-437611"
+}
+, locale: "en-US"
+message: "This API method requires billing to be enabled. Please enable billing on project #dauphine-437611 by visiting https://console.developers.google.com/billing/enable?project=dauphine-437611 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry."
+, links {
+  description: "Google developers console billing"
+  url: "https://console.developers.google.com/billing/enable?project=dauphine-437611"
+}
+]
+2025-03-02 03:03:51,651 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 03:03:57,005 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 03:06:24,511 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 03:06:25,496 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 03:06:44,992 - ERROR - Exception raised in Job[0]: APIConnectionError(Connection error.)
+2025-03-02 03:06:57,867 - ERROR - Exception raised in Job[1]: APIConnectionError(Connection error.)
+2025-03-02 03:09:47,747 - ERROR - Exception raised in Job[0]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 03:09:53,102 - ERROR - Exception raised in Job[1]: RateLimitError(Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}})
+2025-03-02 03:11:48,046 - ERROR - Exception raised in Job[1]: APIConnectionError(Connection error.)
+2025-03-02 03:12:21,284 - ERROR - Exception raised in Job[0]: APIConnectionError(Connection error.)

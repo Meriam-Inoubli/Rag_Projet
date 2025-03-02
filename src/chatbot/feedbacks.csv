@@ -1,0 +1,20 @@
+timestamp,nature_feedback,question,reponse,feedback_text,duree_reponse,nombre_etoiles
+2025-03-01 20:51:03,positive,hi,Je suis en cours de configuration. Posez-moi votre question plus tard !,merci pour la réponse,0,3
+2025-03-02 09:15:22,negative,Comment fonctionne ce chatbot ?,Je ne comprends pas votre question.,Pas très utile...,5,2
+2025-03-02 10:30:45,positive,Quel est le temps aujourd'hui ?,Le temps aujourd'hui est ensoleillé avec une température de 25°C.,Parfait merci !,2,4
+2025-03-02 11:45:10,neutre,Quelle est la capitale de la France ?,La capitale de la France est Paris.,Réponse correcte mais un peu basique.,3,3
+2025-03-02 12:20:34,positive,Comment puis-je contacter le support ?,Vous pouvez contacter le support via email à support@example.com.,Très utile merci !,4,5
+2025-03-02 13:05:56,negative,Quel est le meilleur restaurant à Paris ?,Je ne peux pas répondre à cette question.,Déçu je m'attendais à une recommandation.,6,1
+2025-03-02 14:10:12,positive,Quel est le sens de la vie ?,Le sens de la vie est une question philosophique complexe.,Réponse profonde j'aime ça !,7,
+2025-03-01 20:51:03,positive,hi,Je suis en cours de configuration. Posez-moi votre question plus tard !,Merci pour la réponse rapide et claire,0.5,5
+2025-03-01 20:53:03,positive,comment ça va,La configuration est en cours mais je vais bien. Merci de demander !,Très bonne assistance je reviendrai,1,5
+2025-03-01 20:55:10,positive,hello,Je travaille sur la mise en place. Je reviendrai vers vous bientôt !,Réponse rapide et professionnelle,1.2,3
+2025-03-01 21:00:00,positive,f,Tout fonctionne bien pour le moment. Rien à signaler.,Merci pour l'aide tout est très clair maintenant,0.8,5
+2025-03-01 21:10:33,positive,hi,Je suis en train de configurer. Votre question sera traitée dès que possible.,Réponse excellente tout était facile à comprendre,1,5
+2025-03-01 21:20:15,positive,f,Je n'ai plus de problème à signaler, tout fonctionne bien Excellente assistance je recommande,1.5,5
+2025-03-01 21:25:01,positive,hello,En cours de configuration mais je suis là pour répondre à vos questions,Merci  j'attends patiemment la suite,0.7,4
+2025-03-01 21:30:40,positive,hi,La configuration avance bien je vous tiendrai informé dès que possible,Rapide et efficace,0.9,5
+2025-03-01 21:45:22,positive,f,Je suis disponible pour répondre à vos questions après la configuration,Tout va bien merci pour votre réactivité,0.6,3
+2025-03-01 21:55:17,positive,hi,La configuration est presque terminée je suis à votre disposition dès maintenant,Très satisfaite de l'aide fournie,1.1,5
+2025-03-01 22:35:29,positive,hi,Je suis en cours de configuration. Posez-moi votre question plus tard !,nice,0,4
+2025-03-01 22:55:54,neutre,hi,Je suis en cours de configuration. Posez-moi votre question plus tard !,pas mal,0,3
