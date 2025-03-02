@@ -51,7 +51,7 @@ Projet_GenAI/
 │   │   │   └── transformer.py   # Transformation des données
 │   │   └── data_init.py         # Initialisation des données
 ├── test/                        # Tests unitaires
-│   └── test_get_ll.py           # Test pour la récupération des LL
+│   └── test_get_llm.py           # Test pour la récupération des LLm
 ├── requirements.txt             # Liste des dépendances
 ├── README.md                    # Documentation du projet
 └── .env                         # Fichier de configuration des variables d'environnement
