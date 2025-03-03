@@ -1,0 +1,11 @@
+# Ignorer le fichier .env
+.env
+
+# Ignorer les dossiers de dépendances 
+node_modules/
+env/
+__pycache__/
+
+# Ignorer les fichiers de configuration locaux 
+.vscode/
+.idea/
