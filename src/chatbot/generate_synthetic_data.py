@@ -1,5 +1,6 @@
 import pandas as pd
 import asyncio
+import time
 from lib.chain import get_chain  
 from lib.embeddings import (
     create_cloud_sql_database_connection, 
@@ -43,6 +44,25 @@ contextes = [
     "La radiothérapie est souvent utilisée après une chirurgie pour réduire le risque de récidive."
 ]
 
+# Réponses de référence
+reference_answers = [
+    "Le cancer du sein est une tumeur maligne qui se développe à partir des cellules mammaires.",
+    "Les symptômes courants incluent une masse dans le sein, des changements de la peau ou du mamelon, et des écoulements.",
+    "Le diagnostic repose sur la mammographie, l'échographie, et parfois une biopsie.",
+    "Les facteurs de risque incluent l'âge, les antécédents familiaux, et certaines mutations génétiques comme BRCA1 et BRCA2.",
+    "Les traitements incluent la chirurgie, la radiothérapie, la chimiothérapie, et l'hormonothérapie.",
+    "La mammographie est une radiographie du sein utilisée pour détecter des anomalies.",
+    "Une biopsie mammaire consiste à prélever un échantillon de tissu pour analyse.",
+    "Les types incluent le carcinome canalaire, le carcinome lobulaire, et le cancer triple négatif.",
+    "La chirurgie conservatrice vise à retirer la tumeur tout en préservant le sein.",
+    "Les effets secondaires incluent la fatigue, la perte de cheveux, et des nausées.",
+    "L'hormonothérapie bloque les hormones qui stimulent la croissance des cellules cancéreuses.",
+    "La prévention inclut un mode de vie sain, un dépistage régulier, et parfois des médicaments préventifs.",
+    "La reconstruction mammaire est une chirurgie pour restaurer l'apparence du sein après une mastectomie.",
+    "Les stades vont de 0 (non invasif) à IV (métastatique).",
+    "La radiothérapie utilise des rayons pour détruire les cellules cancéreuses résiduelles."
+]
+
 # Générer un fichier CSV avec des données d'évaluation
 async def generate_evaluation_data(num_samples=15):
     engine = create_cloud_sql_database_connection()
@@ -61,8 +81,9 @@ async def generate_evaluation_data(num_samples=15):
 
     for i in range(num_samples):
         question = questions[i]
-        reponse = responses[i]
         context = contextes[i]
+        reference_answer = reference_answers[i]
+
         # Générer une réponse avec la chaîne RAG
         response = await qa_chain.ainvoke({"query": question})
         generated_answer = response["result"]
@@ -70,7 +91,8 @@ async def generate_evaluation_data(num_samples=15):
         # Ajouter les données au dictionnaire
         data["user_input"].append(question)
         data["response"].append(generated_answer)
-        data["reference_answer"].append(response)  
+        time.sleep(10)
+        data["reference_answer"].append(reference_answer)
         data["retrieved_contexts"].append(context)
 
     # Créer un DataFrame et sauvegarder en CSV
