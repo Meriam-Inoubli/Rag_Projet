@@ -1,0 +1,71 @@
+timestamp,nature_feedback,question,reponse,feedback_text,duree_reponse,nombre_etoiles
+2025-03-01 20:51:03,positive,hi,Je suis en cours de configuration. Posez-moi votre question plus tard !,merci pour la réponse,0,3
+2025-03-02 09:15:22,negative,Comment fonctionne ce chatbot ?,Je ne comprends pas votre question.,Pas très utile...,5,2
+2025-03-02 10:30:45,positive,Quel est le temps aujourd'hui ?,Le temps aujourd'hui est ensoleillé avec une température de 25°C.,Parfait merci !,2,4
+2025-03-02 11:45:10,neutre,Quelle est la capitale de la France ?,La capitale de la France est Paris.,Réponse correcte mais un peu basique.,3,3
+2025-03-02 12:20:34,positive,Comment puis-je contacter le support ?,Vous pouvez contacter le support via email à support@example.com.,Très utile merci !,4,5
+2025-03-02 13:05:56,negative,Quel est le meilleur restaurant à Paris ?,Je ne peux pas répondre à cette question.,Déçu je m'attendais à une recommandation.,6,1
+2025-03-02 14:10:12,positive,Quel est le sens de la vie ?,Le sens de la vie est une question philosophique complexe.,Réponse profonde j'aime ça !,7,
+2025-03-01 20:51:03,positive,hi,Je suis en cours de configuration. Posez-moi votre question plus tard !,Merci pour la réponse rapide et claire,0.5,5
+2025-03-01 20:53:03,positive,comment ça va,La configuration est en cours mais je vais bien. Merci de demander !,Très bonne assistance je reviendrai,1,5
+2025-03-01 20:55:10,positive,hello,Je travaille sur la mise en place. Je reviendrai vers vous bientôt !,Réponse rapide et professionnelle,1.2,3
+2025-03-01 21:00:00,positive,f,Tout fonctionne bien pour le moment. Rien à signaler.,Merci pour l'aide tout est très clair maintenant,0.8,5
+2025-03-01 21:10:33,positive,hi,Je suis en train de configurer. Votre question sera traitée dès que possible.,Réponse excellente tout était facile à comprendre,1,5
+2025-03-01 21:20:15,positive,f,Je n'ai plus de problème à signaler, tout fonctionne bien Excellente assistance je recommande,1.5,5
+2025-03-01 21:25:01,positive,hello,En cours de configuration mais je suis là pour répondre à vos questions,Merci  j'attends patiemment la suite,0.7,4
+2025-03-01 21:30:40,positive,hi,La configuration avance bien je vous tiendrai informé dès que possible,Rapide et efficace,0.9,5
+2025-03-01 21:45:22,positive,f,Je suis disponible pour répondre à vos questions après la configuration,Tout va bien merci pour votre réactivité,0.6,3
+2025-03-01 21:55:17,positive,hi,La configuration est presque terminée je suis à votre disposition dès maintenant,Très satisfaite de l'aide fournie,1.1,5
+2025-03-01 22:35:29,positive,hi,Je suis en cours de configuration. Posez-moi votre question plus tard !,nice,0,4
+2025-03-01 22:55:54,neutre,hi,Je suis en cours de configuration. Posez-moi votre question plus tard !,pas mal,0,3
+2025-03-03 07:22:35,neutre,,,c'est pas mal,0,3
+2025-03-03 07:38:48,positive,Qu'est-ce que la mammographie ?,"La mammographie est une technique d'imagerie médicale utilisant les rayons X pour examiner les seins.  Elle joue un rôle crucial dans le dépistage et le diagnostic du cancer du sein.
+
+**Points clés :**
+
+* **Objectif :** Détecter des anomalies mammaires, telles que des masses (tumeurs), des calcifications (dépôts de calcium) ou des distorsions architecturales,  qui peuvent être des signes précoces de cancer, même avant qu'ils ne soient palpables.  Elle ne permet pas à elle seule de poser un diagnostic définitif de cancer, mais elle peut identifier des zones suspectes nécessitant des examens complémentaires.
+* **Déroulement :**  Chaque sein est comprimé brièvement entre deux plaques afin d'obtenir des images claires.  Cette compression peut être légèrement inconfortable, mais elle est nécessaire pour obtenir des images de qualité.
+* **Types de mammographies :**
+    * **Mammographie de dépistage :**  Réalisée chez les femmes asymptomatiques dans le cadre d'un programme de dépistage organisé (généralement tous les deux ans pour les femmes de 50 à 74 ans).  Ces mammographies sont généralement lues par deux radiologues différents pour une plus grande précision.
+    * **Mammographie diagnostique :**  Réalisée chez les femmes présentant des symptômes (douleur, masse palpable, écoulement du mamelon) ou chez celles ayant une anomalie détectée lors d'une mammographie de dépistage.  Elle peut inclure des incidences supplémentaires pour mieux visualiser la zone suspecte.
+* **Compléments d'examen :**  Dans certains cas, notamment en présence de seins denses, une échographie mammaire peut être réalisée en complément de la mammographie pour mieux caractériser les anomalies.  L'IRM mammaire est réservée aux situations spécifiques, comme le dépistage chez les femmes à haut risque.
+* **Limites :** La mammographie n'est pas parfaite.  Elle peut manquer certains cancers (faux négatifs) ou identifier des anomalies qui ne sont pas cancéreuses (faux positifs).  C'est pourquoi l'autopalpation régulière et l'examen clinique des seins par un professionnel de santé restent importants, même en cas de mammographie normale.
+
+**Conclusion :** La mammographie est un outil essentiel pour la détection précoce du cancer du sein.  En permettant de diagnostiquer la maladie à un stade moins avancé, elle augmente les chances de guérison et permet des traitements moins lourds.  Il est important de discuter avec son médecin des modalités de dépistage adaptées à sa situation individuelle.
+
+**Source :** Global Cancer Control.pdf
+
+**Focus Area :** une mammographie
+
+**Similarity Score :** 0.8562877813562594
+
+**Similarity Type :** cosine",Réponse excellente ! ,13.15882420539856,4
+2025-03-03 08:22:09,negative,Qu'est-ce que la mammographie ?,Je ne suis pas en mesure de répondre pour le moment. Merci de votre patience.,j'ai pas aimé,0,1
+2025-03-03 19:41:20,neutre,Quels sont les types de cancer du sein ?,"Il existe différents types de cancer du sein, classés selon l'endroit où le cancer commence dans le sein et comment il se propage.  Voici quelques-uns des types les plus courants :
+
+**Points clés :**
+
+* **Carcinome canalaire in situ (CCIS) :**  Ce type de cancer se développe dans les canaux galactophores du sein, qui transportent le lait vers le mamelon.  Il est considéré comme non invasif ou précancéreux, car il ne s'est pas propagé au-delà des canaux.  Cependant, s'il n'est pas traité, le CCIS peut évoluer vers un cancer invasif.
+
+* **Carcinome canalaire infiltrant (CCI) :**  C'est le type de cancer du sein le plus courant. Il commence dans les canaux galactophores et se propage aux tissus environnants du sein.
+
+* **Carcinome lobulaire in situ (CLIS) :**  Ce type de cancer se développe dans les lobules du sein, les glandes qui produisent le lait.  Comme le CCIS, il est considéré comme non invasif.  Le CLIS n'est pas toujours traité, mais il est surveillé de près, car il peut augmenter le risque de développer un cancer invasif dans le futur.
+
+* **Carcinome lobulaire infiltrant (CLI) :**  Ce cancer commence dans les lobules et se propage aux tissus environnants du sein.  Il est souvent plus difficile à détecter à la mammographie que le CCI.
+
+* **Cancer du sein inflammatoire :**  Ce type de cancer est moins courant, mais plus agressif. Il provoque une inflammation du sein, qui apparaît rouge, gonflé et chaud.  Il peut être confondu avec une infection mammaire.
+
+* **Maladie de Paget du mamelon :**  Ce cancer rare affecte la peau du mamelon et de l'aréole.  Il peut provoquer des démangeaisons, des rougeurs, des squames et des écoulements du mamelon.
+
+
+**Conclusion :**
+
+Il est important de noter que chaque cancer du sein est unique, même au sein d'un même type.  Le traitement et le pronostic dépendent de nombreux facteurs, notamment le type et le stade du cancer, la taille de la tumeur, l'atteinte ganglionnaire, la présence de récepteurs hormonaux et le statut HER2.  Si vous avez des inquiétudes concernant le cancer du sein, il est essentiel de consulter un professionnel de santé pour un diagnostic et un plan de traitement personnalisés.
+
+**Source :** Global Cancer Control.pdf
+
+**Focus Area :** cancer canalaire
+
+**Similarity Score :** 0.8283440997197759
+
+**Similarity Type :** cosine",c'est bien ! ,0,3
