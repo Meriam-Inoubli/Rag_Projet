@@ -7,7 +7,6 @@ import logging
 import asyncio
 import datetime as dt
 
-# Import your custom functions
 from lib.embeddings import (
     create_cloud_sql_database_connection, 
     get_embedding_model, 
@@ -133,7 +132,7 @@ async def main():
     query = "c'est quoi un cancer du sein?"
 
     # Use the chain to answer the question
-    response = await qa_chain.ainvoke(query)  # Utiliser .ainvoke() pour être compatible avec async
+    response = await qa_chain.ainvoke(query)  
 
     # Display the answer
     print("Answer:", response["result"])
