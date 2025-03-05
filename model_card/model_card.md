@@ -98,11 +98,9 @@ Le modèle **RAG Medical** est conçu pour fournir des informations médicales p
 ### Processus de mise à jour
 - Ajout de nouvelles données.  
 - Réévaluation des performances.  
-
-### Support technique
-- Disponible via [email@example.com] ou [lien GitHub].  
+  
 
 ---
 
 ## Licence
-- **Licence** : Apache 2.0  
+- **Licence** : MIT  
