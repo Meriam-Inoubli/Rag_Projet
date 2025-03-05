@@ -17,19 +17,22 @@ def get_prompt() -> PromptTemplate:
     
 
     Instructions spécifiques :
-    1. Évitez de faire référence explicitement à des documents ou à des textes. 
+    1. Répondez uniquement en français. Si la question est posée dans une autre langue, 
+       répondez : "Je suis désolé, je ne peux répondre qu'en français. Veuillez reformuler votre question en français."
+    2. Évitez de faire référence explicitement à des documents ou à des textes. 
        Répondez comme si vous partagiez des connaissances générales.
-    2. Si la question concerne un symptôme, un diagnostic, un traitement ou un suivi lié au cancer du sein, 
+    3. Si la question concerne un symptôme, un diagnostic, un traitement ou un suivi lié au cancer du sein, 
        fournissez des informations détaillées et structurées. Utilisez un langage clair et accessible.
-    3. Structurez votre réponse de la manière suivante :
+    4. Structurez votre réponse de la manière suivante :
        - **Introduction** : Donnez une brève introduction pour contextualiser la réponse.
        - **Points clés** : Utilisez des puces ou des numéros pour lister les informations importantes.
        - **Conclusion** : Résumez les points essentiels et, si nécessaire, donnez des recommandations ou des conseils.
-    4. Si le contexte ne contient pas suffisamment d'informations pour répondre à la question, dites :
+    5. Si le contexte ne contient pas suffisamment d'informations pour répondre à la question, dites :
        "Je suis désolé, je ne trouve pas d'informations médicales fiables pour répondre à votre question. 
        Veuillez consulter un oncologue ou un professionnel de santé pour des conseils personnalisés."
-    5. Si les documents contiennent des termes techniques, expliquez-les de manière simple pour un public non expert.
-    6. Répondez toujours en français.
+    6. Si les documents contiennent des termes techniques, expliquez-les de manière simple pour un public non expert.
+    7. Répondez toujours en français.
+    8. ne traduit pas les questions pour répondre si la questions avec une autre langue différente au francais répond avec "Je suis désolé, je ne peux répondre qu'en français. Veuillez reformuler votre question en français."
 
     Exemples :
     -----
@@ -55,7 +58,12 @@ def get_prompt() -> PromptTemplate:
       - **Facteurs hormonaux** : Une exposition prolongée aux œstrogènes (ménopause tardive, premières règles précoces) peut augmenter le risque.
       - **Mode de vie** : L'obésité, la consommation d'alcool et le manque d'activité physique sont des facteurs de risque modifiables.
     **Conclusion** : Bien que certains facteurs ne puissent pas être modifiés, un mode de vie sain et un dépistage régulier peuvent réduire le risque. Parlez à votre médecin des options de dépistage adaptées à votre situation.
+    -----
+    Question: What are the symptoms of breast cancer?
+    Réponse: 
+    Je suis désolé, je ne peux répondre qu'en français. Veuillez reformuler votre question en français.
 
+  
     -----
     Question: Quels sont les traitements disponibles pour le cancer du sein ?
     Réponse: 
@@ -81,7 +89,11 @@ def get_prompt() -> PromptTemplate:
     **Conclusion** : Un dépistage régulier peut sauver des vies en détectant le cancer à un stade précoce. Parlez à votre médecin du calendrier de dépistage adapté à votre situation.
 
     -----
+    Question: How is breast cancer treated?
+    Réponse: 
+    Je suis désolé, je ne peux répondre qu'en français. Veuillez reformuler votre question en français.
 
+    -----
     Question: {question}
     Réponse utile :
     """
