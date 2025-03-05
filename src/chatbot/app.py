@@ -4,33 +4,36 @@ import time
 import logging
 import asyncio
 import vertexai
-import nest_asyncio
 from PIL import Image
 import streamlit as st
-st.set_page_config(page_title="CareBot", layout="wide", page_icon="🩺")
-from images import IMAGE_PATH
 from google.cloud import aiplatform
+from google.cloud.aiplatform_v1beta1.services.dataset_service import DatasetServiceClient
 
-from lib.feedback import (
-    save_feedback, 
-    display_feedback_analysis 
-)
-from lib.callbacks import ( 
+# Désactiver l'inspection des modules
+st.config.get_option("server.enableCORS")
+st.config.get_option("server.enableXsrfProtection")
+
+st.set_page_config(page_title="CareBot", layout="wide", page_icon="🩺")
+
+# Configuration des chemins et des imports locaux
+from images import IMAGE_PATH
+from lib.feedback import save_feedback, display_feedback_analysis
+from lib.callbacks import (
     feedback_callback,
     regenerate_callback,
     initialize_qa_chain,
     get_default_response,
-    evaluation_callback
-) 
-
+    evaluation_callback,
+)
 from config import PROJECT_ID, REGION
 from eval import display_evaluation_page
 
-# Appliquer nest_asyncio pour résoudre les problèmes de boucle d'événements
-nest_asyncio.apply()
-
 # Configuration du logging
-logging.basicConfig(filename="app.log", level=logging.ERROR, format="%(asctime)s - %(levelname)s - %(message)s")
+logging.basicConfig(
+    filename="app.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+)
 
 # Initialisation des services Google Cloud
 vertexai.init(project=PROJECT_ID, location=REGION)
@@ -43,13 +46,14 @@ logo = Image.open(os.path.join(IMAGE_PATH, "logo.png")).resize((200, 100))
 if "page" not in st.session_state:
     st.session_state["page"] = "Care Bot"
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "Comment puis-je vous aider aujourd'hui ?"}]
-if "qa_chain" not in st.session_state:
-    st.session_state["qa_chain"] = initialize_qa_chain()
+    st.session_state["messages"] = [
+        {"role": "assistant", "content": "Comment puis-je vous aider aujourd'hui ?"}
+    ]
+
 if "feedback_data" not in st.session_state:
     st.session_state["feedback_data"] = {}
 if "show_feedback_modal" not in st.session_state:
-    st.session_state["show_feedback_modal"] = False  
+    st.session_state["show_feedback_modal"] = False
 if "last_question" not in st.session_state:
     st.session_state["last_question"] = ""
 if "last_response" not in st.session_state:
@@ -60,142 +64,150 @@ if "last_duree_reponse" not in st.session_state:
 # Fonction asynchrone pour générer une réponse
 async def generate_response(qa_chain, prompt):
     try:
+        logging.info(f"Prompt envoyé à la chaîne QA : {prompt}")
         response = await qa_chain.ainvoke({"query": prompt})
+        logging.info(f"Réponse reçue de la chaîne QA : {response}")
+        if not response or not response.get("result"):
+            logging.error("La réponse générée est None ou vide.")
+            return None
         return response
     except Exception as e:
         logging.error(f"Erreur lors de la génération de la réponse : {e}")
         return None
 
-# Fonction pour exécuter une tâche asynchrone dans la boucle d'événements
-def run_async_task(coro):
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
-    try:
-        return loop.run_until_complete(coro)
-    except Exception as e:
-        logging.error(f"Erreur dans la boucle d'événements : {e}")
-        return None
-    finally:
-        loop.close()
+# Fonction principale asynchrone
+async def main():
+    # Barre latérale
+    with st.sidebar:
+        st.image(logo)
+        st.markdown("## 🏥 Navigation")
+        st.session_state["page"] = st.radio(
+            "Sélectionnez une page :",
+            ["Care Bot", "Évaluation", "Voir les feedbacks"],
+            index=["Care Bot", "Évaluation", "Voir les feedbacks"].index(st.session_state["page"]),
+        )
+        st.markdown("---")
+        st.markdown("### Consignes d'Utilisation 📝")
+        st.warning(
+            """
+            **💡 Conseils pour interagir avec Care Bot :**
+            - Les réponses générées sont basées sur des données disponibles et peuvent nécessiter une vérification supplémentaire.
+            - Ce chatbot utilise des sources fiables sur le cancer du sein, mais **ne remplace pas un avis médical professionnel**.
+            """
+        )
+        st.caption("Made with ❤️ by CareBot Team")
 
-# Barre latérale
-with st.sidebar:
-    st.image(logo)
-    st.markdown("## 🏥 Navigation ")
-    st.session_state["page"] = st.radio(
-        "Sélectionnez une page :",
-        ["Care Bot", "Évaluation", "Voir les feedbacks"],
-        index=["Care Bot", "Évaluation", "Voir les feedbacks"].index(st.session_state["page"]),
-    )
-    st.markdown("---")
-    st.markdown("### Consignes d'Utilisation 📝")
-    st.warning(
-        """
-        **💡 Conseils pour interagir avec Care Bot :**
-        - Les réponses générées sont basées sur des données disponibles et peuvent nécessiter une vérification supplémentaire.
-        - Ce chatbot utilise des sources fiables sur le cancer du sein, mais **ne remplace pas un avis médical professionnel**.
-        """
-    )
-    st.caption("Made with ❤️ by CareBot Team")
+    # Affichage des pages
+    if st.session_state["page"] == "Care Bot":
+        st.title("🤖 Care Bot")
+        st.markdown(
+            "### Bienvenue sur Care Bot, votre assistant médical virtuel spécialisé en oncologie."
+        )
+        st.markdown("#### Posez-moi vos questions !")
+        qa_chain = initialize_qa_chain()
 
-# Affichage des pages
-if st.session_state["page"] == "Care Bot":
-    st.title("🤖 Care Bot")
-    st.markdown(
-        "### Bienvenue sur Care Bot, votre assistant médical virtuel spécialisé en oncologie."
-    )
-    st.markdown("#### Posez-moi vos questions !")
+        # Zone d'entrée utilisateur (en bas de la page)
+        prompt = st.chat_input("💬 Posez votre question ici...")
 
-    # Zone d'entrée utilisateur (en bas de la page)
-    prompt = st.chat_input("💬 Posez votre question ici...")
+        # Affichage des messages du chatbot
+        chat_container = st.container()
+        with chat_container:
+            for message in st.session_state.messages:
+                with st.chat_message(message["role"]):
+                    st.markdown(message["content"])
 
-    # Affichage des messages du chatbot 
-    chat_container = st.container()
-    with chat_container:
-        for message in st.session_state.messages:
-            with st.chat_message(message["role"]):
-                st.markdown(message["content"])
+        # Traitement de la nouvelle question
+        if prompt:
+            # Ajouter la question à l'historique des messages
+            st.session_state.messages.append({"role": "user", "content": prompt})
 
-    if prompt:
-        st.session_state.messages.append({"role": "user", "content": prompt})
+            # Afficher la question dans l'interface utilisateur
+            with st.chat_message("user"):
+                st.markdown(prompt)
 
-        with st.chat_message("user"):
-            st.markdown(prompt)
+            with st.spinner("CareBot réfléchit..."):
+                start_time = time.time()
+                response = await generate_response(qa_chain, prompt)
 
-        if st.session_state["qa_chain"]:
-            try:
-                with st.spinner("CareBot réfléchit..."):
-                    start_time = time.time()
-                    response = run_async_task(generate_response(st.session_state["qa_chain"], prompt))
+                if response is None:
+                    logging.error("La chaîne QA a échoué. Tentative de réinitialisation...")
+                    response = await generate_response(qa_chain, prompt)
 
-                    if response is None:
-                        logging.error("La réponse générée est None. Vérifiez l'état du chaînage QA.")
-                        answer = get_default_response(prompt)
-                        duree_reponse = 0
-                    else:
-                        answer = response["result"]
-                        duree_reponse = time.time() - start_time
+                if response is not None and response.get("result"):
+                    answer = response["result"]
+                    duree_reponse = time.time() - start_time
 
-                        if "source_documents" in response and response["source_documents"]:
-                            best_doc = max(
-                                response["source_documents"],
-                                key=lambda doc: doc.metadata.get("similarity_score", 0)
-                            )
+                    if "source_documents" in response and response["source_documents"]:
+                        best_doc = max(
+                            response["source_documents"],
+                            key=lambda doc: doc.metadata.get("similarity_score", 0)
+                        )
+                        similarity_score = best_doc.metadata.get("similarity_score", 0)
+
+                        # Vérifier si le score de similarité est supérieur ou égal à 0.6
+                        if similarity_score >= 0.65:
                             answer += f"\n\n**Source :** {best_doc.metadata.get('source', 'N/A')}\n"
                             answer += f"\n**Focus Area :** {best_doc.metadata.get('focus_area', 'N/A')}\n"
-                            answer += f"\n**Similarity Score :** {best_doc.metadata.get('similarity_score', 'N/A')}\n"
+                            answer += f"\n**Similarity Score :** {similarity_score}\n"
                             answer += f"\n**Similarity Type :** {best_doc.metadata.get('similarity_type', 'N/A')}"
                         else:
-                            logging.info("\nNo relevant sources found.")
+                            logging.info("\nScore de similarité inférieur à 0.6. Afficher uniquement la réponse du modèle.")
+                    else:
+                        logging.info("\nNo relevant sources found.")
+                else:
+                    logging.error("La réponse générée est None ou vide. Vérifiez l'état du chaînage QA.")
+                    answer = get_default_response(prompt)
+                    duree_reponse = 0
 
-            except Exception as e:
-                st.error(f"Erreur lors de la génération de la réponse : {e}")
-                logging.error(f"Erreur lors de la génération de la réponse : {e}")
-                answer = get_default_response(prompt)
-                duree_reponse = 0
-        else:
-            answer = get_default_response(prompt)
-            duree_reponse = 0
+            # Ajouter la réponse à l'historique des messages
+            st.session_state.messages.append({"role": "assistant", "content": answer})
 
-        st.session_state.messages.append({"role": "assistant", "content": answer})
-        with st.chat_message("assistant"):
-            st.markdown(answer)
+            # Afficher la réponse dans l'interface utilisateur
+            with st.chat_message("assistant"):
+                st.markdown(answer)
 
-        st.session_state["last_question"] = prompt
-        st.session_state["last_response"] = answer
-        st.session_state["last_duree_reponse"] = duree_reponse
+            # Mettre à jour les variables de session
+            st.session_state["last_question"] = prompt
+            st.session_state["last_response"] = answer
+            st.session_state["last_duree_reponse"] = duree_reponse
 
-        # Afficher les boutons sous la réponse
-        col1, col2, col3 = st.columns(3)
-        if col1.button("Feedback", key=f"feedback_{uuid.uuid4()}", on_click=feedback_callback):
-            pass
+            # Afficher les boutons sous la réponse
+            col1, col2, col3 = st.columns(3)
+            if col1.button("Feedback", key=f"feedback_{uuid.uuid4()}", on_click=feedback_callback):
+                pass
 
-        if col2.button("Regénérer la réponse", key=f"regenerate_{uuid.uuid4()}", on_click=regenerate_callback):
-            pass
+            if col2.button("Regénérer la réponse", key=f"regenerate_{uuid.uuid4()}", on_click=regenerate_callback):
+                pass
 
-        if col3.button("Évaluation", key=f"evaluation_{uuid.uuid4()}", on_click=evaluation_callback):
-            pass
+            if col3.button("Évaluation", key=f"evaluation_{uuid.uuid4()}", on_click=evaluation_callback):
+                pass
 
-    # Afficher la fenêtre modale pour le feedback
-    if st.session_state.get("show_feedback_modal", False):
-        with st.form(key="feedback_form"):
-            st.markdown("### Donnez votre avis")
-            nombre_etoiles = st.slider("Notez CareBot (1 à 5 étoiles) :", 1, 5, 3)
-            feedback_text = st.text_area("Laissez un commentaire...")
-            if st.form_submit_button("Envoyer"):
-                save_feedback(
-                    question=st.session_state["feedback_data"]["question"],
-                    reponse=st.session_state["feedback_data"]["reponse"],
-                    feedback_text=feedback_text,
-                    duree_reponse=st.session_state["feedback_data"]["duree_reponse"],
-                    nombre_etoiles=nombre_etoiles
-                )
-                st.success("Merci pour votre feedback !")
-                st.session_state["show_feedback_modal"] = False
+        # Afficher la fenêtre modale pour le feedback
+        if st.session_state.get("show_feedback_modal", False):
+            with st.form(key="feedback_form"):
+                st.markdown("### Donnez votre avis")
+                nombre_etoiles = st.slider("Notez CareBot (1 à 5 étoiles) :", 1, 5, 3)
+                feedback_text = st.text_area("Laissez un commentaire...")
+                if st.form_submit_button("Envoyer"):
+                    save_feedback(
+                        question=st.session_state["feedback_data"]["question"],
+                        reponse=st.session_state["feedback_data"]["reponse"],
+                        feedback_text=feedback_text,
+                        duree_reponse=st.session_state["feedback_data"]["duree_reponse"],
+                        nombre_etoiles=nombre_etoiles
+                    )
+                    st.success("Merci pour votre feedback !")
+                    st.session_state["show_feedback_modal"] = False
 
-elif st.session_state["page"] == "Évaluation":
-    display_evaluation_page()
+    elif st.session_state["page"] == "Évaluation":
+        display_evaluation_page()
 
-elif st.session_state["page"] == "Voir les feedbacks":
-    st.title("💬 Feedbacks")
-    display_feedback_analysis()
+    elif st.session_state["page"] == "Voir les feedbacks":
+        st.title("💬 Feedbacks")
+        display_feedback_analysis()
+
+# Point d'entrée pour exécuter l'application
+if __name__ == "__main__":
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    loop.run_until_complete(main())
